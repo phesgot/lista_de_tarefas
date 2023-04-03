@@ -4,7 +4,7 @@ import '../models/todo.dart';
 import '../widgets/todo_list_item.dart';
 
 class TodoListPage extends StatefulWidget {
-  TodoListPage({Key? key}) : super(key: key);
+  const TodoListPage({Key? key}) : super(key: key);
 
   @override
   State<TodoListPage> createState() => _TodoListPageState();
@@ -107,8 +107,8 @@ class _TodoListPageState extends State<TodoListPage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Limpar tudo?'),
-        content: Text('Você tem certeza que deseja apagar todas as tarefas?'),
+        title: const Text('Limpar tudo?'),
+        content: const Text('Você tem certeza que deseja apagar todas as tarefas?'),
         actions: [
           TextButton(
             onPressed: () {
